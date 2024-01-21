@@ -1,21 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="name setting website">
-    <meta name="keyword" content="name,setting,glass">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Hi!</h1>
-    <img src="glass.bmp" alt="an image of a glass">
-    <button>Change user</button>
-    <input type="text">
-    <input type="text" disabled>
+   <head>
+    <title>Hello!</title>
+    <style>
+        html
+        {
+            font-size:30px;
+            background-color:azure;
+            background-image:url(image/test.png);
+        }
+        body
+        {
+            width: 600px;
+            margin: 0 auto 100px auto;
+            background-color: #ff9500;
+            padding: 0 20px 20px 20px; 
+            border: 5px solid black;
+        }
+        em
+        {
+            color: red;
+            font-style: italic;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        img.wall
+        {
+            height: 100px; 
+            width: 100px;
+            border-radius: 50px; 
+            float: left;
+            margin-right: 10px;
+            object-fit: cover;
+        }
+        p.thisis
+        {
+            font-weight: bold;
+        }
+        p.wall
+        {
+            font-size: 20px;
+        }
+        h1
+        {
+            font-size: 50px;
+            text-align: center;
+            text-shadow: red -3px -3px 5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: red orange yellow transparent;
+        }
+        h2
+        {
+            font-size: 40px;
+        }
+        li
+        {
+            line-height: 5;
+            letter-spacing: 3px;
+            color:brown;
+        }
+        dt
+        {
+            color:blue;
+        }
+        dd
+        {
+            color:brown;
+        }
+    </style>
+   </head>
 
-    <script src="index.js"></script> 
+   <body>
+    <h1 id="section 1">Section1</h1>
+    <p>The setting order is up right bottom left (including margin, border, padding)</p>
+    
+    <ul>  <!--unordered list-->
+        <li>apples</li>
+        <li>banana</li>
+        <li>guava</li>
+    </ul>
+
+    <ol> <!--ordered list-->
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+    </ol>
+
+    <dl> <!--description list-->
+        <dt>Tony</dt> <!--description term-->
+        <dd>A NTU student</dd> <!--description description-->
+        <dt>Pokemon Go</dt>
+        <dd>A mobile game</dd>
+    </dl>
+
+    <h2 id="section 2">Section2</h2>
+    
+    <figure>
+        <img class="wall" src="image/test.png" alt="an image of wall">
+        <figcaption>a wall with a light bulb</figcaption>
+    </figure>
+    
+    <br>
+    <p class="thisis">this is</p>
+    <p class="wall">a <em>wall</em> image</p>
+    <p>&lt;HTML&gt; &copy; </p>
+    
+    <p>Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. Maiores quis cumque numquam non provident veritatis corporis minus itaque enim architecto tenetur officiis sint asperiores blanditiis.</p>
+    
+    <video controls loop poster="image/test.png">
+        <source src="rabbit.mp4" type="video/mp4">
+        <source src="rabbit.webm" type="video/webm">
+        
+        <track kind="subtitles" src="hi.vtt" srclang="en" label="English">
+        
+        <p>
+          Your browser doesn't support the video. Here is a
+          <a href="https://www.youtube.com/watch?v=wOLNou1OJRw">link to the video</a> instead.
+        </p>
+    </video>
+    <p></p>
+
+    <audio controls>
+        <source src="alarm.wav">
+    </audio>
+    <p></p>
+
+    <a href="1.html" target="_blank">click image or word<img src="image/test.png" alt="a test image"></a> <!--target="_blank":網頁會開在新分頁-->
+    <p></p>
+    <a href="image/test.png" download="wall image" title="downloading the image">download</a>  <!--title:滑鼠置於超連結上時會顯示的資訊--> <!--download="wall image":下載時預設的檔名-->
+    <p></p>
+    <a href="#section 1">go back to section1</a>
+    <p></p>
+    <a href="#">jump to top</a>
+    <p></p>
+    <a href="https://google.com">google</a>
+    <p></p>
+    <a href="mailto:logo00326@gmail.com;logo ? subject=A hello mail & body=Hi! I'm Tony!">mailme</a> <!--mailto後面要有多個參數的話，第一個參數必須以「?」開頭，後面的參數每一個都以"&"分隔-->
+    <p></p>
+    <a href="2.html" target="_blank">go to second webpage</a>
+    <p></p>
+
+    <a href="3.html" target="_blank">go to third webpage</a>
+    <p></p>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d910.3909433649618!2d120.66944016708366!3d24.116831554092652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693cf93138bfe9%3A0x55409a535a7013ac!2zNy1FTEVWRU4g6Kmg5qyK6ZaA5biC!5e0!3m2!1szh-TW!2stw!4v1705821706743!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <object type="application/pdf" data="test.pdf" width=500 height=500>
+    <p></p>
+ 
 </body>
 </html>
 
-<!--this is a comment-->
+
+
+
+
+
+
+
