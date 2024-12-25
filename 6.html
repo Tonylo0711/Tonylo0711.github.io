@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page 6</title>
+    <style>
+        html
+        {
+            background-color:oldlace;
+        }
+        div
+        {
+            text-align: center;
+        }
+        #box1
+        {
+            border: 5px solid black;
+            height: 100px;
+            width: 300px;
+            font-size: 40px;
+            overflow: scroll;
+            margin: auto;
+        }
+        #box2
+        {
+            border: 5px solid black;
+            height: 100px;
+            width: 300px;
+            font-size: 20px;
+            overflow-x: hidden;
+            overflow-y: hidden;
+            margin: auto;
+        }
+        input
+        {
+            height: 30px;
+            width: 100px;
+            font-size: 20px;
+        }
+        #portal_hint
+        {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Fantastic! You should try this one now!</h1>
+        <h2>Challenge 6: press the button</h2>
+        <div id="box1">
+            <p>This is a box which can "scroll".</p>
+        </div>
+        <br>
+        <pre id="box2">
+<p id="hint1">Can you make this box scroll<br>to find the button?</p>     
+
+                 
+                          <input type="submit" id="button2" value="">
+<input type="submit" id="button1" value="Go">                                               <input type="submit" id="button3" value="">
+        </pre>
+        <h3 id="hint2"></h3>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><p id="portal_hint"></p>
+        <input id="portal" type="hidden" value="">
+    </div>
+    <script src="6.js"></script>
+</body>
+</html>

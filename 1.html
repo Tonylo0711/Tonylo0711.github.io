@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page 1</title>
+    <style>
+        html
+        {
+            background-color: rgb(0,173,238);
+        }
+        div
+        {
+            text-align:center;
+        }
+        #quieter
+        {
+            float:right;
+        }
+        #louder
+        {
+            float:left;
+        }
+        #portal_hint
+        {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Welcome, <span id="name"></span>!<br>You have passed "challenge 0"! Afterwards, you will face many challenges like this, go for it!</h1>
+        <h2>Challenge 1: unlock the lock</h2>
+        <img src="louder.png" id="louder">
+        <img src="quieter.png" id="quieter">
+        <img src="lock.jpg" alt="a lock">
+        <h3>
+            Please enter the password:<input type="text" id="text">
+            <input type="submit" value="submit" id="submit">
+        </h3>    
+        <audio src="password.wav" controls loop autoplay hidden></audio>
+        <img src="mute.png" id="mute">
+        <br><br><input id="portal" type="hidden" value="">
+        <br><p id="portal_hint"></p>
+    </div>
+    <script src="1.js"></script>
+</body>
+</html>

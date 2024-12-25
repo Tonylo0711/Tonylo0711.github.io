@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page 7</title>
+    <style>
+        html
+        {
+            background-color: wheat;
+        }
+        div
+        {
+            text-align: center;
+        }
+        p, input
+        {
+            font-size: 20px;
+        }
+        .checkbox
+        {
+            width: 25px;
+            height: 25px;
+        }
+        .puzzle
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .text
+        {
+            width: 100px;
+            height:20px;
+        }
+        #portal_hint
+        {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Awesome! You seems to be unbeatable?</h1>
+        <h2>Challenge 7: decode the symbol</h2>
+        <div>
+            <p>Enter the following three answers after decoding:<br><em>(notice: You only have three chances of trials.)</em></p>         
+            <p id="hint"></p>
+            <div class="puzzle"><input type="checkbox" class="checkbox" id="checkbox1">&nbsp;&nbsp;<img src="img1.jpg">&nbsp;&nbsp;&nbsp;<span>Answer:</span><input type="text" id="text1" class="text"></div><br>
+            <div class="puzzle"><input type="checkbox" class="checkbox" id="checkbox2">&nbsp;&nbsp;<img src="img2.jpg">&nbsp;&nbsp;&nbsp;<span>Answer:</span><input type="text" id="text2" class="text"></div><br>
+            <div class="puzzle"><input type="checkbox" class="checkbox" id="checkbox3">&nbsp;&nbsp;<img src="img3.jpg">&nbsp;&nbsp;&nbsp;<span>Answer:</span><input type="text" id="text3" class="text"></div><br>
+            <input type="submit" value="submit" id="submit">
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><p id="portal_hint"></p>
+        <input id="portal" type="hidden" value="">
+    </div>
+    <script src="7.js"></script>
+</body>
+</html>

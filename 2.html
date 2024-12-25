@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page 2</title>
+    <style>
+        html
+        {
+            background-color: black;
+        }
+        @media (max-width: 40em)
+        {
+            html 
+            {
+                background-color: red;
+            }
+        }
+        div
+        {
+            text-align: center;
+            color:white;
+        }
+        #portal_hint
+        {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Good Job, keep it up!</h1>
+        <h2>Challenge 2: find the hidden ball</h2>
+        <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="100" cy="50" r="40" style="fill:black" id="ball"/>
+        </svg>
+        <h3 id="hint"></h3>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <input id="portal" type="hidden" value="">
+        <br><p id="portal_hint"></p>
+    </div>
+    <script src="2.js"></script>
+</body>
+</html>

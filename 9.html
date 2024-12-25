@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>page9</title>
+  <style>
+        html
+        {
+            background-color: honeydew;
+        }
+        div
+        {
+            text-align: center;
+        }
+        #time
+        {
+            font-size: 25px;
+        }
+        #puzzle-container 
+        {
+            width: 600px; 
+            height: 600px; 
+            border: 2px solid #000;
+            flex-wrap: wrap;
+            position: relative;
+            overflow: hidden;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, 3%);
+            text-align: center;
+        }
+      
+        .puzzle-piece 
+        {
+            position: absolute;
+            cursor: grab;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        #challenge
+        {
+            height:30px;
+            width:100px;
+        }
+  </style>
+</head>
+<body>
+    <div>
+        <h1>Divine! Here comes the last challenge!</h1>
+        <h2>Challenge 9: complete the jigsaw</h2>
+        <div id="time">
+            <input type="submit" id="challenge" value="start">
+        </div>
+        <div id="puzzle-container"></div>
+        <script src="9.js"></script>
+    </div> 
+</body>
+</html>

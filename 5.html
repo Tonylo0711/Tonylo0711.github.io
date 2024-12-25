@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page 5</title>
+    <style>
+        html
+        {
+            background-color:blanchedalmond;
+        }
+        div
+        {
+            text-align: center;
+        }
+        #challenge
+        {
+            height: 30px;
+            width: 50px;
+            font-size: 15px;
+        }
+        #time
+        {
+            font-size: 25px;
+        }
+        .description
+        {
+            font-size: 20px;
+        }
+        .puzzle
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #portal_hint
+        {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Fabulous! It's about time to test your memory again!</h1>
+        <h2>Challenge 5: remember the trait</h2>
+        <div id="time">
+            <p>In this part, you need to answer at least <strong>3</strong> questions correctly in totally <strong>5</strong> questions, or you will fail this game!</p>
+            <p>Are you ready to start the challenge?&nbsp;&nbsp;</p>
+            <input type="submit" id="challenge" value="start">
+        </div>
+        <br><img id="question">
+        <div class="puzzle"><input type="hidden" class="radio" id="radio1" name="radio">&nbsp;&nbsp;<span id="description1" class="description"></span><img id="image1"></div><br>
+        <div class="puzzle"><input type="hidden" class="radio" id="radio2" name="radio">&nbsp;&nbsp;<span id="description2" class="description"></span><img id="image2"></div><br>
+        <div class="puzzle"><input type="hidden" class="radio" id="radio3" name="radio">&nbsp;&nbsp;<span id="description3" class="description"></span><img id="image3"></div><br>
+        <!--using the same "name" to restrict the selection to be single-->
+        <p><input type="hidden" id="submit" value="submit"></p>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <p id="portal_hint"></p>
+        <input id="portal" type="hidden" value="">
+    </div>
+    <script src="5.js"></script>
+</body>
+</html>
