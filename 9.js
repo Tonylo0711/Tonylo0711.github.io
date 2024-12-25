@@ -32,7 +32,7 @@ function startTimer(duration, display) {
 
 start.addEventListener("click", () => {
   enableDragAndDrop();
-  const countdown = 120;
+  const countdown = 60;
   const minutes = String(Math.floor(countdown / 60)).padStart(2, '0');
   const seconds = String(countdown % 60).padStart(2, '0');
   display.textContent = `Remaining time: ${minutes} : ${seconds}`;
