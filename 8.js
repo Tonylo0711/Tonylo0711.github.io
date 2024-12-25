@@ -32,7 +32,7 @@ video.addEventListener("timeupdate",()=>
 {
     if (video.currentTime>=69)
     {
-        window.location.assign("6.html");
+        window.location.assign("9.html");
     }
 });
 

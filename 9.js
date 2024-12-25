@@ -32,7 +32,7 @@ function startTimer(duration, display) {
 
 start.addEventListener("click", () => {
   enableDragAndDrop();
-  const countdown = 60;
+  const countdown = 120;
   const minutes = String(Math.floor(countdown / 60)).padStart(2, '0');
   const seconds = String(countdown % 60).padStart(2, '0');
   display.textContent = `Remaining time: ${minutes} : ${seconds}`;
@@ -110,7 +110,7 @@ function isPuzzleComplete() {
     const currentX = parseInt(piece.style.left, 10);
     const currentY = parseInt(piece.style.top, 10);
 
-    return Math.abs(currentX - correctX) < 10 && Math.abs(currentY - correctY) < 10;
+    return Math.abs(currentX - correctX) < 20 && Math.abs(currentY - correctY) < 20;
   });
 }
 
