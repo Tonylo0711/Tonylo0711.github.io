@@ -3,29 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="name setting website">
-    <meta name="keyword" content="name,setting,glass">
-    <title>Document</title>
-    <link rel="icon" href="cy1.ico" > <!--rel:relationship-->
+    <title>cover</title>
+    <style>
+        html
+        {
+            background-color: aliceblue;
+            height: 100%;
+        }
+        body
+        {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        main
+        {
+            flex-grow: 1;
+        }
+        /*以上的flex是在讓footer置於頁面最底部*/
+        a:link
+        {
+            color:black;
+            text-decoration:none;
+        }
+        a:visited
+        {
+            color:black; 
+            text-decoration:none; 
+        }
+        main
+        {
+            display: flex; /*排版神器*/
+            justify-content: center; /*區塊水平置中*/
+            align-items: center; /*區塊垂直置中*/
+        }
+        div
+        {
+            text-align:center;
+        }
+        h1
+        {
+            font-size: 50px;
+            border-style:dotted;
+            border-color:crimson;
+        }
+        p
+        {
+            font-size: 25px;
+        }
+        footer
+        {
+            background-color:gainsboro;
+            text-align:center;
+        }
+    </style>
 </head>
 <body>
-    <div>
-        <h1></h1>
-        <img src="glass.bmp" alt="an image of a glass">
-        <p></p>
-        <button class="name">Change user</button>
-        <button class="color">Change color</button>
+    <main>
+        <div>
+        <h1>Welcome to the game!</h1>
+        <p>please enter your name and then press <a>submit:</a></p>
         <form>
-            <p>
-            please input your age:<input id="textbox" type="text">
-            <input type="submit" value="submit" id="submit"> 
-            </p>
-            <div id="output"></div>
-        </form>  
-        <p></p>
-        <script src="index.js"></script> 
-    </div>
+            <input type="text" id="text">
+            <input type="submit" value="submit" id="submit">
+        </form>
+        <p id="hint"></p>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2024 Wei-Chun Lo. All rights reserved.</p>
+    </footer>
+    <script src="cover.js"></script> 
 </body>
 </html>
 
-<!--this is a comment-->
